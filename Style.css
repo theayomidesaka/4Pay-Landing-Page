@@ -15,21 +15,27 @@
 }
 
 .TopNav{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: #0729A2;
     color:#ffffff;
     padding:1.7rem 15rem 1.7rem 15rem;
-    width: 100%;
+    
     border-bottom: 1px solid;
     border-color: #5050C7;
 }
-.TopNavContent{
+/* .TopNavContent{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 
-}
+} */
 
 .NavLinks{
     width: fit-content;
@@ -101,12 +107,12 @@
     height: 100vh;
     z-index: 100;
     padding: 2rem;
-    display:flex;
+    display: none;
     flex-direction: column;
     justify-content: start;
     align-items: start;
     row-gap: 3rem;
-    visibility: hidden;
+    
 }
 
 .nav-btns-mobile{
@@ -118,6 +124,7 @@
     align-content: center;
     column-gap: 1rem;
 }
+
 .mobile-menu ul{
     width: fit-content;
     height: auto;
@@ -179,6 +186,7 @@
     font-size: 1.125rem;
     font-weight: 400;
     max-width: 75%;
+    line-height: 2rem;
     
 }
 .DownloadCTA{
@@ -187,6 +195,16 @@
     align-content: center;
     text-align: center;
     column-gap: 1rem;
+}
+
+.AppStore, .PlayStore{
+    width:30%;
+    height: auto;
+}
+
+.AppStore img, .PlayStore img{
+    width:100%;
+    height: auto;
 }
 
 .SectionTwo{
@@ -398,6 +416,126 @@
     border-radius: 8px;
     font-size: 1.2rem;
 }
+
+.FAQ-section{
+    background-color: #ffffff;
+    padding: 6rem 15rem 6rem 15rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+}
+
+.FAQ-section h2{
+    font-size: 3.25rem;
+    font-family: general sans;
+    width: 40%;
+    height: auto;
+}
+
+.FAQ-container h5{
+    font-family: Work Sans;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.FAQ-container{
+    width: 100%;
+    height: auto;
+    border: 1px solid #949494;
+    border-radius: 1rem;
+    background-color: #ffffff;
+}
+
+.FAQs{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding:1rem;
+}
+.FAQ-1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 1.5rem 1rem 1.5rem;
+    border-bottom: 1px solid #949494;
+    background-color: #ffffff;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.FAQ-7 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 1.5rem 1rem 1.5rem;
+    border-bottom: none;
+    background-color: #ffffff;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.FAQ-question{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding:1rem 1.5rem 1rem 1.5rem; */
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+
+.FAQ-answer{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    
+}
+
+.FAQ-1.active .FAQ-answer{
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 0rem;
+        background-color: #ffffff;
+        display: flex;
+}
+
+.FAQ-answer p{
+    font-family: Work Sans;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    text-align: left;
+    max-width: 94%;
+}
+
+.FAQ-default-7 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0rem 0rem 1rem 1rem;
+} 
+
+
+
 footer{
     background-color: #F0F0FF;
     padding: 6.25rem 7.5rem 6.25rem 7.25rem;
@@ -438,23 +576,19 @@ footer p{
     justify-content: space-between;
 }
 
-@media only screen and (max-width:1120px){
+@media only screen and (max-width:1250px){
     .TopNav{
-        background-color: #0729A2;
-        color:#ffffff;
-        padding:1.5rem 3rem 1.5rem 3rem;
         width: 100%;
-        border-bottom: 1px solid;
-        border-color: #5050C7;
-    }
-    .TopNavContent{
+        height: auto;
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
-        width: 100%;
-    
+        align-items: center;
+        background-color: #0729A2;
+        color:#ffffff;
+        padding:1.7rem 4rem 1.7rem 4rem;
     }
+    
     
     .NavLinks{
         width: fit-content;
@@ -470,7 +604,8 @@ footer p{
        
     }
     
-    .fa-regular{
+    .desktop-menu i{
+        display: block;
         cursor: pointer;
         color: #ffffff;
     }
@@ -484,7 +619,7 @@ footer p{
         justify-content: space-between;
         align-items: center;
         column-gap: 1rem;
-        visibility: hidden;
+        display: none;
     }
     
     .nav-btns{
@@ -495,7 +630,7 @@ footer p{
         justify-content: flex-start;
         align-items: center;
         column-gap: 1rem;
-        visibility: hidden;
+        display: none;
     }
     .secondary-btn{
         width: 50%;
@@ -528,23 +663,28 @@ footer p{
         left:0;
         height: 100vh;
         z-index: 100;
-        padding: 2rem;
-        display:flex;
+        padding: 1.7rem 4rem;
+        display:none;
         flex-direction: column;
         justify-content: start;
         align-items: start;
         row-gap: 3rem;
-        visibility: hidden;
     }
     
     .nav-btns-mobile{
-        width: 70%;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-content: center;
         column-gap: 1rem;
+    }
+
+    .nav-btns-mobile .secondary-btn,.nav-btns-mobile .primary-btn{
+        width: 50%;
+        height: auto;
+        font-size: 1rem;
     }
     .mobile-menu ul{
         width: fit-content;
@@ -555,6 +695,8 @@ footer p{
         align-items: flex-start;
         row-gap: 1rem;
     }
+    
+    
     
     .logo-and-close-icon{
         width: 100%;
@@ -614,7 +756,10 @@ footer p{
     .HeroText p{
         font-size: 1.125rem;
         font-weight: 400;
+        max-width: 75%;
+        line-height: 2rem;
         text-align: center;
+        
      
         
     }
@@ -624,6 +769,16 @@ footer p{
         justify-content: center;
         align-items: center;
         column-gap: 1rem;
+    }
+
+    .AppStore, .PlayStore{
+        width:20%;
+        height: auto;
+    }
+
+    .AppStore img, .PlayStore img{
+        width:100%;
+        height: auto;
     }
     
     .SectionTwo{
@@ -785,12 +940,11 @@ footer p{
         font-family: work Sans;
         font-size: 1.125rem;
         color: #687992;
-        /* margin-right: 24px; */
         font-family: work Sans;
         font-size: 1.4rem; 
         font-weight: 550;
-        /* margin-bottom: 1rem;
-    } */
+       
+    } 
     
     #one{
         font-family: work Sans;
@@ -857,22 +1011,135 @@ footer p{
         border-radius: 8px;
         font-size: 1.2rem;
     }
+
+    .FAQ-section{
+        background-color: #ffffff;
+        padding: 3rem 2.75rem 3rem 2.75rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+    }
+    
+    .FAQ-section h2{
+        font-size: 2.4rem;
+        font-family: general sans;
+        width: 60%;
+        height: auto;
+    }
+    
+    .FAQ-container h5{
+        width: 80%;
+        font-family: Work Sans;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    .FAQ-container{
+        width: 100%;
+        height: auto;
+        border: 1px solid #949494;
+        border-radius: 1rem;
+        background-color: #ffffff;
+    }
+    
+    .FAQs{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding:1rem;
+    }
+    .FAQ-1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding:1rem 1.5rem 1rem 1.5rem;
+        border-bottom: 1px solid #949494;
+        background-color: #ffffff;
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+    
+    .FAQ-7 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding:1rem 1.5rem 1rem 1.5rem;
+        border-bottom: none;
+        background-color: #ffffff;
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+    
+    .FAQ-question{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* padding:1rem 1.5rem 1rem 1.5rem; */
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+    
+    
+    .FAQ-answer{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background-color: #ffffff;
+        
+    }
+    
+    .FAQ-1.active .FAQ-answer{
+            width: 100%;
+            height: auto;
+            padding: 1.5rem 0rem;
+            background-color: #ffffff;
+            display: flex;
+    }
+    
+    .FAQ-answer p{
+        font-family: Work Sans;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        text-align: left;
+        max-width: 94%;
+    }
+    
+
+    
+
     footer{
         background-color: #F0F0FF;
         padding: 6.25rem 2.75rem 6.25rem 2.75rem;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        column-gap: 1rem;
         width: 100%;
         height: auto;
+        flex-wrap: wrap;
     }
     
-    footer div{
+    /* footer div{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-    }
+        flex-wrap: wrap;
+    } */
     
     footer a{
         text-decoration: none;
@@ -898,24 +1165,19 @@ footer p{
     }
 
 }
-}
 
-@media only screen and (max-width:480px){
+
+@media only screen and (max-width:620px){
     .TopNav{
-        background-color: #0729A2;
-        color:#ffffff;
-        padding:0.5rem 1rem 0.5rem 1rem;
         width: 100%;
-        border-bottom: 1px solid;
-        border-color: #5050C7;
-    }
-    .TopNavContent{
+        height: auto;
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
-        width: 100%;
-    
+        align-items: center;
+        background-color: #0729A2;
+        color:#ffffff;
+        padding:1.7rem 2rem 1.7rem 2rem;
     }
     
     .NavLinks{
@@ -924,6 +1186,8 @@ footer p{
     }
     
     .desktop-menu{
+        width: 100%;
+        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -932,7 +1196,8 @@ footer p{
        
     }
     
-    .fa-regular{
+    .desktop-menu i{
+        display: block;
         cursor: pointer;
         color: #ffffff;
     }
@@ -946,7 +1211,7 @@ footer p{
         justify-content: space-between;
         align-items: center;
         column-gap: 1rem;
-        visibility: hidden;
+        display: none;
     }
     
     .nav-btns{
@@ -957,7 +1222,7 @@ footer p{
         justify-content: flex-start;
         align-items: center;
         column-gap: 1rem;
-        visibility: hidden;
+        display: none;
     }
     .secondary-btn{
         width: 50%;
@@ -983,24 +1248,24 @@ footer p{
     
     .mobile-menu{
         width: 100%;
+        height: 100vh;
         background-color: #0729A2;
         color:#ffffff;
         position: fixed;
         top: 0;
         left:0;
-        height: 100vh;
         z-index: 100;
-        padding: 2rem;
-        display:flex;
+        padding: 1.7rem 2rem;
+        display:none;
         flex-direction: column;
         justify-content: start;
         align-items: start;
         row-gap: 3rem;
-        visibility: hidden;
+        
     }
     
     .nav-btns-mobile{
-        width: 70%;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: row;
@@ -1008,6 +1273,13 @@ footer p{
         align-content: center;
         column-gap: 1rem;
     }
+
+    .nav-btns-mobile .secondary-btn,.nav-btns-mobile .primary-btn{
+        width: 50%;
+        height: auto;
+        font-size: 0.8rem;
+    }
+
     .mobile-menu ul{
         width: fit-content;
         height: auto;
@@ -1045,7 +1317,7 @@ footer p{
         flex-direction: column;
         align-content: center;
         justify-content: center;
-        width:80%;
+        width:100%;
         height: auto;
         row-gap: 1.5rem;
         
@@ -1076,6 +1348,8 @@ footer p{
     .HeroText p{
         font-size: 1.125rem;
         font-weight: 400;
+        max-width: 75%;
+        line-height: 2rem;
         text-align: center;
      
         
@@ -1088,6 +1362,17 @@ footer p{
         justify-content: center;
         align-items: center;
         column-gap: 1rem;
+        padding: 0rem 1rem;
+    }
+
+    .AppStore, .PlayStore{
+        width:50%;
+        height: auto;
+    }
+
+    .AppStore img, .PlayStore img{
+        width:100%;
+        height: auto;
     }
     
     .SectionTwo{
@@ -1222,16 +1507,26 @@ footer p{
        height: auto;
     }
     
+    .SectionThreeTxt{
+        width: fit-content;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 1rem;
+    }
     .SectionThreeTxt h2{
         color: #1D2939;
         font-family: work Sans;
-        font-size: 2.5rem;
+        font-size: 2rem;
     
     }
     
     .SectionThreeTxt p{
         font-family: inter;
         font-size: 1.125rem;
+        line-height: 1.8rem;
         color: #444F5F;
  
     }
@@ -1259,8 +1554,20 @@ footer p{
         font-weight: 550;
     }
     
-    
+    .SectionThree{
+        background-color: #CCCCFF;
+        border-radius: 2rem;
+        padding:2rem 2rem 0rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 100%;
+        height: auto;
+    }
     .SectionFour{
+        width: 100%;
+        height: auto;
         background-color: #FFE4AE;
         border-radius: 2rem;
         padding:2rem 2rem 0rem 2rem;
@@ -1268,7 +1575,6 @@ footer p{
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: auto;
     }
     
     .S4LeftContent{
@@ -1292,12 +1598,13 @@ footer p{
         .SectionFourTxt h2{
             color: #1D2939;
             font-family: work Sans;
-            font-size: 2.5rem;
+            font-size: 2rem;
     }
     
     .SectionFourTxt p{
         font-size: 1.125rem;
         color: #444F5F;
+        line-height: 1.8rem;
     }
 
     .SectionFourImg{
@@ -1314,13 +1621,131 @@ footer p{
        background-color: #0729A2;
         color: #ffffff;
         border-style: none;
-        padding: 1.25rem 2rem 1.25rem 2rem;
+        padding: 1rem 1.5rem 1rem 1.5rem;
         border-radius: 8px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
+
+    .FAQ-section{
+        background-color: #ffffff;
+        padding: 4rem 1.5rem 4rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+    }
+    
+    .FAQ-section h2{
+        font-size: 1.5rem;
+        font-family: general sans;
+        width: 70%;
+        height: auto;
+    }
+    
+    .FAQ-container h5{
+        width: 80%;
+        font-family: Work Sans;
+        font-size: 1rem;
+        font-weight: 500;
+
+    }
+    
+    .FAQ-container{
+        width: 100%;
+        height: auto;
+        border: 1px solid #949494;
+        border-radius: 1rem;
+        background-color: #ffffff;
+    }
+    
+    .FAQs{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding:1rem;
+    }
+    .FAQ-1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding:1rem 0rem 1rem 0rem;
+        border-bottom: 1px solid #949494;
+        background-color: #ffffff;
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+    
+    .FAQ-7 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding:1rem 0rem 1rem 0rem;
+        border-bottom: none;
+        background-color: #ffffff;
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+    
+    .FAQ-question{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+    
+    
+    .FAQ-answer{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background-color: #ffffff;
+        
+    }
+    
+    .FAQ-1.active .FAQ-answer{
+            width: 100%;
+            height: auto;
+            padding: 1.5rem 0rem;
+            background-color: #ffffff;
+            display: flex;
+    }
+    
+    .FAQ-1.active svg{
+        transform: rotate(180deg);
+        color: red;
+    }
+
+    svg{
+        /* transform: rotate(180deg); */
+        color: red;
+    }
+
+    .FAQ-answer p{
+        font-family: Work Sans;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        text-align: left;
+        max-width: 94%;
+    }
+    
+
     footer{
         background-color: #F0F0FF;
-        padding: 2rem 1.5rem 2rem 1.5rem;
+        padding: 3rem 1.5rem 3rem 1.5rem;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
