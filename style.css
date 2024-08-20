@@ -229,6 +229,13 @@
     
 }
 
+.SectionTwoTxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
 
 .SectionTwoTxt h2{
     font-family: "Work Sans", sans-serif;
