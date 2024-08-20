@@ -24,18 +24,9 @@
     background-color: #0729A2;
     color:#ffffff;
     padding:1.7rem 15rem 1.7rem 15rem;
-    
     border-bottom: 1px solid;
     border-color: #5050C7;
 }
-/* .TopNavContent{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-
-} */
 
 .NavLinks{
     width: fit-content;
@@ -64,6 +55,7 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 1rem;
+    cursor: pointer;
 }
 
 .nav-btns{
@@ -74,6 +66,7 @@
     justify-content: flex-start;
     align-items: center;
     column-gap: 1rem;
+    
 }
 .secondary-btn{
     width: fit-content;
@@ -84,6 +77,7 @@
     color: #ffffff;
     border-radius: 0.5rem;;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .primary-btn{
@@ -95,6 +89,7 @@
     color: #0729A2;
     border-radius: 0.5rem;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .mobile-menu{
@@ -195,6 +190,7 @@
     align-content: center;
     text-align: center;
     column-gap: 1rem;
+    cursor: pointer;
 }
 
 .AppStore, .PlayStore{
@@ -303,6 +299,17 @@
     column-gap: 1rem;
 }
 
+.CardBtn:hover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #191919;
+    font-size: 1.138rem;
+    font-weight: 600;
+    column-gap: 1.5rem;
+    cursor: pointer;
+}
 
 .SectionCont{
     padding: 3rem 15rem 3rem 15rem;
@@ -512,6 +519,41 @@
         padding: 1.5rem 0rem;
         background-color: #ffffff;
         display: flex;
+        animation: fade 1s ease-in-out;
+}
+
+.FAQ-7.active .FAQ-answer{
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0rem;
+    background-color: #ffffff;
+    display: flex;
+    animation: fade 1s ease-in-out;
+}
+
+.FAQ-1.active svg{
+    transform: rotate(180deg);
+}
+
+.FAQ-7.active svg{
+    transform: rotate(180deg);
+}
+
+svg{
+    transition: transform 0.6s ease-in;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+
 }
 
 .FAQ-answer p{
@@ -521,19 +563,6 @@
     text-align: left;
     max-width: 94%;
 }
-
-.FAQ-default-7 {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    background-color: #ffffff;
-    border-radius: 0rem 0rem 1rem 1rem;
-} 
-
 
 
 footer{
@@ -1103,12 +1132,47 @@ footer p{
     }
     
     .FAQ-1.active .FAQ-answer{
-            width: 100%;
-            height: auto;
-            padding: 1.5rem 0rem;
-            background-color: #ffffff;
-            display: flex;
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 0rem;
+        background-color: #ffffff;
+        display: flex;
+        animation: fade 1s ease-in-out;
+}
+
+.FAQ-7.active .FAQ-answer{
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0rem;
+    background-color: #ffffff;
+    display: flex;
+    animation: fade 1s ease-in-out;
+}
+
+.FAQ-1.active svg{
+    transform: rotate(180deg);
+}
+
+.FAQ-7.active svg{
+    transform: rotate(180deg);
+}
+
+svg{
+    transition: transform 0.5s ease-in;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
     }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+
+}
     
     .FAQ-answer p{
         font-family: Work Sans;
@@ -1717,23 +1781,50 @@ footer p{
     }
     
     .FAQ-1.active .FAQ-answer{
-            width: 100%;
-            height: auto;
-            padding: 1.5rem 0rem;
-            background-color: #ffffff;
-            display: flex;
+        width: 100%;
+        height: auto;
+        padding: 1.5rem 0rem;
+        background-color: #ffffff;
+        display: flex;
+        animation: fade 1s ease-in-out;
+}
+
+    .FAQ-7.active .FAQ-answer{
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 0rem;
+    background-color: #ffffff;
+    display: flex;
+    animation: fade 1s ease-in-out;
+}
+
+    .FAQ-1.active svg{
+    transform: rotate(180deg);
+    }
+
+    .FAQ-7.active svg{
+    transform: rotate(180deg);
+    }
+
+svg{
+    transition: transform 0.5s ease-in;
+    }
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
     }
     
-    .FAQ-1.active svg{
-        transform: rotate(180deg);
-        color: red;
-    }
 
-    svg{
-        /* transform: rotate(180deg); */
-        color: red;
-    }
+}
 
+    
+    
     .FAQ-answer p{
         font-family: Work Sans;
         font-size: 1rem;
