@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -10,7 +11,7 @@
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: weight;
-     font-style: normal;
+    font-style: normal;
 
 }
 
@@ -174,10 +175,11 @@
     max-width: 60%;
 }
 .HeroText h1{
-    font-family: work Sans;
+    font-family: "Work Sans", sans-serif;
     font-size: 4rem;
 }
 .HeroText p{
+    font-family: inter;
     font-size: 1.125rem;
     font-weight: 400;
     max-width: 75%;
@@ -229,7 +231,7 @@
 
 
 .SectionTwoTxt h2{
-    font-family: Work Sans;
+    font-family: "Work Sans", sans-serif;
     font-size: 2.5rem;
     color: #1D2939;
 }
@@ -339,7 +341,7 @@
 
 .SectionThreeTxt h2{
     color: #1D2939;
-    font-family: work Sans;
+    font-family: "Work Sans", sans-serif;
     font-size: 4rem;
     margin-bottom: 0.5rem;
 }
@@ -357,7 +359,7 @@
     
 }
 .SectionThreeLinks p{
-    font-family: work Sans;
+    font-family: "Work Sans", sans-serif;
     font-size: 1.125rem;
     color: #687992;
     margin-right: 24px;
@@ -368,7 +370,7 @@
 }
 
 #one{
-    font-family: work Sans;
+    font-family: "Work Sans", sans-serif;
     font-size: 1.5rem;
     color: #1D2939; 
     font-weight: 550;
@@ -406,7 +408,7 @@
 }
     .SectionFourTxt h2{
         color: #1D2939;
-        font-family: work Sans;
+        font-family: "Work Sans", sans-serif;
         font-size: 4rem;
 }
 
@@ -438,7 +440,7 @@
 
 .FAQ-section h2{
     font-size: 3.25rem;
-    font-family: general sans;
+    font-family: "Work Sans", sans-serif;
     width: 40%;
     height: auto;
 }
@@ -779,7 +781,7 @@ footer p{
         max-width: 100%;
     }
     .HeroText h1{
-        font-family: work Sans;
+        font-family: "Work Sans", sans-serif;
         font-size: 4rem;
         text-align: center;
     }
@@ -840,7 +842,7 @@ footer p{
     
     
     .SectionTwoTxt h2{
-        font-family: Work Sans;
+        font-family: "Work Sans", sans-serif;
         font-size: 2.5rem;
         color: #1D2939;
         text-align: center;
@@ -892,7 +894,7 @@ footer p{
     
     }
     .CardText h5{
-        font-family: Work Sans;
+        font-family: "Work Sans", sans-serif;
         font-size: 1.625rem;
         color: #1D2939;
     }
@@ -949,7 +951,7 @@ footer p{
     
     .SectionThreeTxt h2{
         color: #1D2939;
-        font-family: work Sans;
+        font-family: "Work Sans", sans-serif;
         font-size: 2.4rem;
     
     }
@@ -967,7 +969,7 @@ footer p{
         
     }
     .SectionThreeLinks p{
-        font-family: work Sans;
+        font-family: "Work Sans", sans-serif;
         font-size: 1.125rem;
         color: #687992;
         font-family: work Sans;
@@ -977,7 +979,7 @@ footer p{
     } 
     
     #one{
-        font-family: work Sans;
+        font-family: "Work Sans", sans-serif;
         font-size: 1.4rem;
         color: #1D2939; 
         font-weight: 550;
@@ -1015,7 +1017,7 @@ footer p{
     }
         .SectionFourTxt h2{
             color: #1D2939;
-            font-family: work Sans;
+            font-family: "Work Sans", sans-serif;
             font-size: 2.4rem;
     }
     
@@ -1056,14 +1058,14 @@ footer p{
     
     .FAQ-section h2{
         font-size: 2.4rem;
-        font-family: general sans;
+        font-family: "Work Sans", sans-serif;
         width: 60%;
         height: auto;
     }
     
     .FAQ-container h5{
         width: 80%;
-        font-family: Work Sans;
+        font-family: "Work Sans", sans-serif;
         font-size: 1rem;
         font-weight: 500;
     }
@@ -1406,7 +1408,7 @@ svg{
         max-width: 100%;
     }
     .HeroText h1{
-        font-family: work Sans;
+        font-family: "Work Sans", sans-serif;
         font-size: 2.5rem;
         text-align: center;
     }
@@ -1475,7 +1477,7 @@ svg{
         row-gap: 1.25rem;
     }
     .SectionTwoTxt h2{
-        font-family: Work Sans;
+        font-family: "Work Sans", sans-serif;
         font-size: 2.5rem;
         color: #1D2939;
         text-align: center;
@@ -1527,7 +1529,7 @@ svg{
     
     }
     .CardText h5{
-        font-family: Work Sans;
+        font-family: "Work Sans", sans-serif;
         font-size: 1.625rem;
         color: #1D2939;
     }
@@ -1583,7 +1585,7 @@ svg{
     }
     .SectionThreeTxt h2{
         color: #1D2939;
-        font-family: work Sans;
+        font-family: "Work Sans", sans-serif;
         font-size: 2rem;
     
     }
@@ -1602,7 +1604,7 @@ svg{
         
     }
     .SectionThreeLinks p{
-        font-family: work Sans;
+        font-family: "Work Sans", sans-serif;
         font-size: 1.125rem;
         color: #687992;
         margin-right: 24px;
@@ -1613,7 +1615,7 @@ svg{
     }
     
     #one{
-        font-family: work Sans;
+        font-family: "Work Sans", sans-serif;
         font-size: 1.4rem;
         color: #1D2939; 
         font-weight: 550;
@@ -1662,7 +1664,7 @@ svg{
     }
         .SectionFourTxt h2{
             color: #1D2939;
-            font-family: work Sans;
+            font-family: "Work Sans", sans-serif;
             font-size: 2rem;
     }
     
@@ -1705,7 +1707,7 @@ svg{
     
     .FAQ-section h2{
         font-size: 1.5rem;
-        font-family: general sans;
+        font-family: "Work Sans", sans-serif;
         width: 70%;
         height: auto;
     }
