@@ -42,7 +42,7 @@
     column-gap: 4.5rem;
 }
 
-.desktop-menu i{
+.menu-icon{
     display: none;
     cursor: pointer;
 }
@@ -643,8 +643,11 @@ footer p{
        
     }
     
-    .desktop-menu i{
-        display: block;
+    .menu-icon{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
         color: #ffffff;
     }
@@ -1270,8 +1273,11 @@ svg{
        
     }
     
-    .desktop-menu i{
-        display: block;
+    .menu-icon{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
         color: #ffffff;
     }
@@ -1336,6 +1342,12 @@ svg{
         align-items: start;
         row-gap: 3rem;
         
+    }
+    
+    .close-icon{
+        display: flex;
+        justify-content: center;
+        align-self: center;
     }
     
     .nav-btns-mobile{
@@ -1422,7 +1434,7 @@ svg{
     .HeroText p{
         font-size: 1.125rem;
         font-weight: 400;
-        max-width: 75%;
+        max-width: 90%;
         line-height: 2rem;
         text-align: center;
      
